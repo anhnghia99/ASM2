@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: arial;
+        }
+
+        header {
+            display: flex;
+            background-color: green;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+
+
+        }
+
+        label {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .hotline {
+            display: flex;
+            width: 30%;
+            justify-content: left;
+
+        }
+
+        .hotline p {
+            font-size: large;
+            padding-left: 10px;
+            font-weight: bold;
+            color: rgb(172, 32, 111);
+            padding-top: 7px;
+        }
+
+        .hotline h2 {
+            color: #ffffff;
+        }
+
+        .menu {
+            display: flex;
+            width: 70%;
+            justify-content: right;
+        }
+
+        .menu a {
+            text-decoration: none;
+            list-style: none;
+            color: #ffffff;
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+        .menu a:hover {
+            background-color: #ffffff;
+            color: green;
+        }
+
+        .left {
+            width: 50%;
+        }
+
+        .right {
+            width: 50%;
+            text-align: center;
+        }
+
+        .right p {
+            font-size: 18px;
+        }
+
+        .right img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .right img:hover {
+            opacity: 80%;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .tieuDe h2 {
+            text-align: center;
+            font-family: arial;
+        }
+
+        .post {
+            width: 40%;
+            justify-content: center;
+        }
+
+        .post img {
+            width: 100%;
+            align-self: center;
+            border-radius: 10px;
+
+        }
+
+        .post img:hover {
+            opacity: 80%;
+            cursor: pointer;
+        }
+
+        .post p {
+            align-self: center;
+            text-align: center;
+        }
+
+        .post button {
+            margin-top: 20px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: rgb(56, 84, 56);
+            cursor: pointer;
+        }
+
+        .post button:hover {
+            background-color: rgb(3, 62, 42);
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: green;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: 30px;
+        }
+
+        .spTren {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .noiDung {
+            width: 30%;
+        }
+
+        .noiDung img {
+            width: 100%;
+            height: 250px;
+        }
+
+        hr {
+            height: 1px;
+            width: 90%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            background-color: rgb(9, 255, 0);
+        }
+
+        @media screen and (max-width: 990px) {
+
+            .hotline,
+            .menu {
+                width: 100%;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+                text-align: center;
+            }
+
+            .noiDung {
+                width: 45%;
+            }
+
+        }
+
+        @media screen and (max-width: 576px) {
+            .post {
+                width: 100%;
+            }
+
+            .noiDung {
+                width: 100%;
+            }
+
+            .post img {
+                align-self: center;
+            }
+
+            .post p {
+                align-self: center;
+            }
+
+            .post button {
+                align-self: center;
+            }
+
+            label {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            label:hover {
+                cursor: pointer;
+            }
+
+
+            #menu:checked~.menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hotline">
+            <img src="logo.png" alt="" width="70px">
+            <h2>Hotline: </h2>
+            <p>63841824121</p>
+
+        </div>
+
+        <input type="checkbox" id="menu" style="display: none;">
+        <label for="menu">Menu</label>
+
+        <div class="menu">
+            <a href="#">Trang chu</a>
+            <a href="#">Lich su</a>
+            <a href="tintuc.html">Tin tuc</a>
+            <a href="lienhe.html">Lien he</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <div class="tieuDe">
+                <h2>Du lich chu Huong</h2>
+            </div>
+            <div class="content">
+                <div class="post">
+                    <img src="myyen97-191905021944-lich-su-chua-huong.jpg" alt="">
+                    <p>Đến chùa Hương, bạn có thể ngắm nhìn và thắp nhang tại những ngôi chùa thừ phật, những ngôi đền
+                        thờ thần, các ngôi đền cổ kính, trang nghiêm.
+                    </p>
+                    <button>xem them</button>
+                </div>
+                <div class="post">
+                    <img src="myyen97-191905021944-lich-su-chua-huong.jpg" alt="">
+                    <p>Đến chùa Hương, bạn có thể ngắm nhìn và thắp nhang tại những ngôi chùa thừ phật, những ngôi đền
+                        thờ thần, các ngôi đền cổ kính, trang nghiêm.
+                    </p>
+                    <button>xem them</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="pasted image 0.png" alt="">
+            <p>Chùa Hương có tên gọi khác là chùa Hương Sơn, nằm ở xã Hương Sơn, huyện Mỹ Đức, hà Nội
+            </p>
+        </div>
+        <hr>
+        <div class="spTren">
+            <div class="noiDung">
+                <img src="chua-huong-3.jpg" alt="">
+                <h2>Lịch sử quần thể văn hóa – tôn giáo Hương Sơn</h2>
+                <p>Chùa được chính thức xây dựng với quy mô lớn vào cuối thế kỷ 17 </p>
+            </div>
+            <div class="noiDung">
+                <img src="chua-huong-4.jpg" alt="">
+                <h2>Động Hương Tích – “Nam thiên đệ nhất động”</h2>
+                <p>Động Hương Tích là nơi thờ phụng Phật Bà Quan Âm </p>
+            </div>
+            <div class="noiDung">
+                <img src="chua-huong-5.jpg" alt="">
+                <h2>Bến Đục</h2>
+                <p>Bến Đục nằm bên bờ sông Đáy, là nơi bắt đầu để đến chùa Hương </p>
+            </div>
+            <div class="noiDung">
+                <img src="chua-huong-6.jpg" alt="">
+                <h2>Chùa Giải Oan</h2>
+                <p>Chùa Giải Oan được dựng ở lưng chừng núi Long Tuyền</p>
+            </div>
+            <div class="noiDung">
+                <img src="chua-huong-7.jpg" alt="">
+                <h2>Chùa Thanh Sơn</h2>
+                <p>Chùa được xây dựng vào năm 1860 trên thế đất Phượng Hoàng ẩm Thủy.</p>
+            </div>
+            <div class="noiDung">
+                <img src="chua-huong-8-1536x1059.jpg" alt="">
+                <h2>Mùa hoa súng nở bung trên mặt nước từ tháng 10 – tháng 12</h2>
+                <p>Hoa súng nở rộ trên suối Yến là một trong những điểm thu hút du khách khi đến khu thắng cảnh chùa
+                    Hương.</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <a href="">legal</a>
+        <a href="">Cookie preferences</a>
+        <a href="">Visa Rules</a>
+        <a href="">©Copyright 1996 - 2023. All Rights Reserved.</a>
+    </footer>
+</body>
+
+</html>
